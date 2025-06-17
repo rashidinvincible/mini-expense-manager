@@ -8,6 +8,10 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 
 @Entity
+@Setter
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
 
 public class Expense {
 
@@ -22,9 +26,10 @@ public class Expense {
     private String description;
     private String category;
     private boolean isAnomaly;
+}
 
 
-    public Expense() {
+    /*public Expense() {
     }
 
     public Expense(Long id, LocalDate date, BigDecimal amount, String vendorName, String description, String category, boolean isAnomaly) {
@@ -95,3 +100,4 @@ public class Expense {
         isAnomaly = anomaly;
     }
 }
+*/
